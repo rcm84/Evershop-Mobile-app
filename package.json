@@ -1,0 +1,21 @@
+{
+  "name": "particle-landscape-engine",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Reusable Three.js particle terrain toolkit",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "demo:basic": "vite --open /demos/basic-terrain/",
+    "demo:infinite": "vite --open /demos/infinite-terrain/",
+    "demo:fog": "vite --open /demos/fog-landscape/",
+    "demo:alien": "vite --open /demos/alien-world/"
+  },
+  "dependencies": {
+    "three": "^0.165.0"
+  },
+  "devDependencies": {
+    "vite": "^5.3.4"
+  }
+}

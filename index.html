@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParticleLandscapeEngine Demos</title>
+    <style>
+      body { font-family: Inter, system-ui, sans-serif; margin: 0; background:#0b1020; color:#ecf0ff; }
+      main { max-width: 900px; margin: 0 auto; padding: 2rem; }
+      .grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+      a.card { display:block; text-decoration:none; color:inherit; border:1px solid #2a3359; border-radius:12px; padding:1rem; background:#151c35; }
+      a.card:hover { border-color:#7aa2ff; transform: translateY(-1px); }
+      code { background:#1a2240; padding:.1rem .3rem; border-radius:6px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>ParticleLandscapeEngine</h1>
+      <p>Choose a live demo (all interactive: drag to orbit, scroll to zoom, WASD/arrow keys to move).</p>
+      <div class="grid">
+        <a class="card" href="./demos/basic-terrain/">
+          <h3>Basic Terrain</h3><p>Single-tile high-density particle terrain.</p>
+        </a>
+        <a class="card" href="./demos/infinite-terrain/">
+          <h3>Infinite Terrain</h3><p>3x3 tiled terrain with camera-driven tile recycling.</p>
+        </a>
+        <a class="card" href="./demos/fog-landscape/">
+          <h3>Fog Landscape</h3><p>Atmospheric fog and depth fade emphasis.</p>
+        </a>
+        <a class="card" href="./demos/alien-world/">
+          <h3>Alien World</h3><p>Stylized noisy terrain in a darker scene.</p>
+        </a>
+      </div>
+      <p style="margin-top:1rem">If a demo appears static, click/drag inside the canvas to orbit the camera.</p>
+      <p>Run with <code>npm run dev</code>.</p>
+    </main>
+  </body>
+</html>
